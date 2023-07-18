@@ -80,7 +80,7 @@ get_binaries() {
   echo
   echo -n "Pulling new binaries.."
   mkdir -p "${HOME}"/.config/.temp
-  wget -qO "${HOME}"/.config/.temp/sonarr.tar.gz --content-disposition "https://services.sonarr.tv/v1/download/main/latest?version=3&os=linux"
+  wget -qO "${HOME}"/.config/.temp/sonarr.tar.gz --content-disposition "https://services.sonarr.tv/v1/download/develop/latest?version=4&os=linux"
   tar -xzf "${HOME}"/.config/.temp/sonarr.tar.gz -C "${HOME}/.config/.temp" && mv "${HOME}/.config/.temp/Sonarr" "${HOME}/.config/sonarr2" && rm -rf "${HOME}"/.config/.temp
   echo -n "done."
 }
